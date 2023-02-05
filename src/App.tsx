@@ -1,17 +1,17 @@
 import React, { FC, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchItems } from "./store/reducers/items";
 
 const App: FC = () => {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    return () => {
-      axios
-        .get("https://reqres.in/api/products")
-        .then((res) => console.log(res.data))
-        .catch((err) => console.log(err));
-    };
+    // @ts-ignore
+    dispatch(fetchItems());
   }, []);
+
   // @ts-ignore
   const items = useSelector((state) => state.items);
   console.log(items);
