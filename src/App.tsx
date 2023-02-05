@@ -1,21 +1,25 @@
 import React, { FC, useEffect } from "react";
 import "./App.css";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchItems } from "./store/reducers/items";
+import { addItem, fetchItems } from "./store/reducers/items";
 
 const App: FC = () => {
   const dispatch = useDispatch();
-
+  const { items, isLoading } = useSelector((state: any) => state.items);
   useEffect(() => {
     // @ts-ignore
     dispatch(fetchItems());
   }, []);
 
-  // @ts-ignore
-  const items = useSelector((state) => state.items);
   console.log(items);
-  return <div className="App"></div>;
+
+  return (
+    <div>
+      {/*{items.map((el: any) => (*/}
+      {/*  <h1>{el.id}</h1>*/}
+      {/*))}*/}
+    </div>
+  );
 };
 
 export default App;

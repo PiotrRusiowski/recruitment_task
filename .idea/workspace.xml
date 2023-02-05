@@ -4,7 +4,7 @@
     <list default="true" id="40fdc5ae-351c-4426-8b9f-3db468f4efc7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/items.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
       <workItem from="1675543534365" duration="237000" />
       <workItem from="1675548469632" duration="463000" />
       <workItem from="1675611051388" duration="2988000" />
-      <workItem from="1675614094001" duration="3461000" />
+      <workItem from="1675614094001" duration="9599000" />
     </task>
     <servers />
   </component>
