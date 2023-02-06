@@ -5,6 +5,7 @@ import { fetchProducts } from "./actions/actions";
 import { Action } from "@reduxjs/toolkit";
 import { Product } from "./types/types";
 import ProductsFilter from "./Components/ProductsFilter";
+import ProductsTable from "./Components/ProductsTable";
 
 const App: FC = () => {
   const dispatch = useDispatch();
@@ -16,14 +17,10 @@ const App: FC = () => {
     // @ts-ignore
     dispatch(fetchProducts());
   }, []);
-  console.log(products, filteredProducts);
   return (
     <div>
       <ProductsFilter />
-
-      {filteredProducts.map((el: any) => (
-        <h4 key={el.id}>{el.id}</h4>
-      ))}
+      <ProductsTable />
     </div>
   );
 };
