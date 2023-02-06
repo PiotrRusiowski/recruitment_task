@@ -1,5 +1,4 @@
-
-import items from './items'
+import products from "./products";
 export default {
-items
-}
+  products,
+};
